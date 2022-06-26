@@ -34,14 +34,14 @@ Explorar las diferentes herramientas de Next para poder crear una Pokedex
 - [x] Consumir la API seleccionada
 - [x] Crear el componente PokemonCard para mostrar los datos del pokemón
 - [x] "Paginar" los pokemones
-- [ ] Agregar interfaces
+- [x] Agregar interfaces
 - [ ] Mostrar los detalles del pokemon, consumiendo la pokeapi
 - [ ] Agregar animaciones:
   - [ ] on mount
   - [ ] on hover
 - [ ] Agregar Loading states
 - [ ] Agregar Husky para CI
-- [ ] Deploy en un free hosting
+- [x] Deploy en un free hosting
 
 # TradeOffs
 
