@@ -1,7 +1,8 @@
-import { useGetPokemons } from "@/api/pokeApi";
+import { useGetPokemons as getPokemons } from "@/api/pokeApi";
 import { PokemonCard } from "@/components/PokemonCard/PokemonCard";
 import { Button, Grid } from "@mui/material";
 import type { NextPage, GetServerSideProps } from "next";
+import Head from "next/head";
 
 interface Props {
   currentPage: number;
@@ -15,6 +16,9 @@ const HomePage: NextPage<Props> = ({ pokemons, increasePage, currentPage }) => {
 
   return (
     <>
+      <Head>
+        <title>Pokemon App</title>
+      </Head>
       <Grid
         container
         rowSpacing={4}
@@ -41,7 +45,7 @@ const HomePage: NextPage<Props> = ({ pokemons, increasePage, currentPage }) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const pokemons = await useGetPokemons();
+  const pokemons = await getPokemons();
   return {
     props: {
       pokemons,
