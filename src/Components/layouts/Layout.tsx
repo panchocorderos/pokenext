@@ -1,13 +1,11 @@
-import Head from "next/head";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
 interface Props {
   children?: React.ReactNode;
-  title?: string;
 }
 
-export const Layout: React.FC<Props> = ({ children, title }) => {
+export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Box

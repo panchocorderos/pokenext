@@ -2,7 +2,6 @@ import axios from "axios";
 
 export const pokeApi = axios.create({
   baseURL: "https://www.pokemon.com/el",
-  // baseURL: "https://pokeapi.co/api/v2",
 });
 
 type PokemonResponse = {
