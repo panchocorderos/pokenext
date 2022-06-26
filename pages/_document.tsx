@@ -15,7 +15,6 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-          <title>Pokemon App</title>
           <meta name="author" content="Pancho Cordero" />
           <meta name="description" content="Pokedex con NextJS" />
           <meta name="keywords" content="pokemon, pokedex" />
