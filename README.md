@@ -47,7 +47,7 @@ Explorar las diferentes herramientas de Next para poder crear una Pokedex
 
 Análisis de las diversas apis que existen y sus respectivas consecuencias
 
-- La clásica [Pokeapi](https://pokeapi.co/), n + 1 queries por cada página, ya que el response de https://pokeapi.co/api/v2/pokemon/ tiene el nombre y una url a las demás características del pokemon
+- La clásica [Pokeapi](https://pokeapi.co/), 13 queries por cada página, ya que el response de https://pokeapi.co/api/v2/pokemon/ tiene el nombre y una url a las demás características del pokemon
 
 - La api de la [página oficial](https://www.pokemon.com/us/api/pokedex/kalos), está expuesta en el network de la página.
   - 1 sola query, pero contiene todo el contenido necesario para mostrar en las cards
